@@ -412,3 +412,285 @@ footer .copyright {
         width: 100%;
     }
 }
+/* ================= HERO SECTION ================= */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 60px 8%;
+    background: #ffffff;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 600px;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.hero-text h2 {
+    font-size: 38px;
+    margin-bottom: 20px;
+    color: #2f5d50;
+}
+
+.hero-text p {
+    font-size: 18px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #2f5d50;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.hero-button:hover {
+    background: #23483e;
+}
+
+/* Mobile layout */
+@media (max-width: 768px) {
+
+    .hero-section {
+        flex-direction: column;
+        padding: 40px 6%;
+    }
+
+    .hero-image img {
+        height: 280px;
+    }
+
+    .hero-text h2 {
+        font-size: 30px;
+    }
+
+}
+/* ================= SERVICES SECTION ================= */
+
+.services-section {
+    padding: 70px 8%;
+    background: #f5f8f6;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2 {
+    font-size: 36px;
+    color: #2f5d50;
+    margin-bottom: 12px;
+}
+
+.section-heading p {
+    color: #555;
+    font-size: 17px;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    text-align: center;
+    padding-bottom: 25px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-6px);
+}
+
+.service-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.service-card h3 {
+    color: #2f5d50;
+    font-size: 24px;
+    margin: 22px 15px 10px;
+}
+
+.service-card p {
+    color: #555;
+    line-height: 1.6;
+    margin: 0 20px 20px;
+}
+
+.service-card a {
+    display: inline-block;
+    background: #2f5d50;
+    color: white;
+    text-decoration: none;
+    padding: 11px 20px;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.service-card a:hover {
+    background: #23483e;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+/* ================= ABOUT SECTION ================= */
+
+.home-about {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    padding: 70px 8%;
+    background: #ffffff;
+}
+
+.home-about-image {
+    flex: 1;
+}
+
+.home-about-image img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    display: block;
+}
+
+.home-about-text {
+    flex: 1;
+}
+
+.home-about-text h2 {
+    color: #2f5d50;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.home-about-text p {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.home-about-text .hero-button {
+    margin-top: 5px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .home-about {
+        flex-direction: column;
+        padding: 50px 6%;
+    }
+
+    .home-about-image img {
+        height: 280px;
+    }
+
+    .home-about-text h2 {
+        font-size: 30px;
+    }
+
+}
+/* ================= GET INVOLVED SECTION ================= */
+
+.get-involved {
+    padding: 70px 8%;
+    background: #2f5d50;
+    text-align: center;
+}
+
+.get-involved-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.get-involved h2 {
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.get-involved p {
+    color: white;
+    font-size: 17px;
+    line-height: 1.7;
+    margin-bottom: 30px;
+}
+
+.involved-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.outline-button {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.outline-button:hover {
+    background: white;
+    color: #2f5d50;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .get-involved {
+        padding: 50px 6%;
+    }
+
+    .get-involved h2 {
+        font-size: 30px;
+    }
+
+    .involved-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
