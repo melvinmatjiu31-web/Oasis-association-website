@@ -1,696 +1,366 @@
-/* =========================================
-   OASIS ASSOCIATION WEBSITE
-   Main Stylesheet
-   ========================================= */
-
-
-/* ---------- GENERAL ---------- */
+/* ================= GENERAL SETTINGS ================= */
 
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: #f5f8f6;
-    color: #333;
-}
-
-h1,
-h2,
-h3 {
-    line-height: 1.2;
-}
-
-h2 {
-    color: #176b4d;
-    margin-bottom: 15px;
-}
-
-h3 {
-    color: #176b4d;
-    margin-bottom: 10px;
-}
-
-p {
-    margin-bottom: 15px;
-}
-
-img {
-    max-width: 100%;
-    display: block;
-}
-
-a {
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-
-/* ---------- HEADER ---------- */
-
-header {
-    background-color: #176b4d;
-    color: white;
-    text-align: center;
-}
-
-.header-content {
-    padding: 30px 20px 20px;
-}
-
-header h1 {
-    font-size: 2.5rem;
-    margin-bottom: 8px;
-}
-
-header p {
-    font-size: 1.1rem;
-}
-
-
-/* ---------- NAVIGATION ---------- */
-
-nav {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    background-color: #123f31;
-}
-
-nav a {
-    color: white;
-    padding: 15px 20px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-nav a:hover,
-nav a.active {
-    background-color: #2c8a65;
-    text-decoration: none;
-}
-
-
-/* ---------- MAIN ---------- */
-
-main {
-    max-width: 1150px;
-    margin: auto;
-}
-
-
-/* ---------- HERO ---------- */
-
-.hero {
-    min-height: 550px;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    text-align: center;
-
-    background-image:
-        linear-gradient(
-            rgba(0, 60, 40, 0.65),
-            rgba(0, 60, 40, 0.65)
-        ),
-        url("../images/hero.jpg");
-
-    background-size: cover;
-    background-position: center;
-
-    padding: 50px 25px;
-}
-
-.hero-content {
-    max-width: 850px;
-    color: white;
-}
-
-.hero h2 {
-    color: white;
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-}
-
-.hero-buttons {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 12px;
-}
-
-.hero-buttons a {
-    background-color: white;
-    color: #176b4d;
-    padding: 13px 25px;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.hero-buttons a:hover {
-    background-color: #dcece5;
-    text-decoration: none;
-}
-
-
-/* ---------- SECTIONS ---------- */
-
-main > section {
-    background-color: white;
-    margin: 30px 20px;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
-}
-
-
-/* ---------- WELCOME ---------- */
-
-.welcome {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 40px;
-    align-items: center;
-}
-
-.section-image img {
-    width: 100%;
-    height: 320px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.section-text p {
-    margin-bottom: 18px;
-}
-
-
-/* ---------- BUTTON ---------- */
-
-.button {
-    display: inline-block;
-    background-color: #176b4d;
-    color: white;
-    padding: 12px 22px;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-.button:hover {
-    background-color: #0f5139;
-    text-decoration: none;
-}
-
-
-/* ---------- SECTION HEADING ---------- */
-
-.section-heading {
-    text-align: center;
-    max-width: 750px;
-    margin: 0 auto 30px;
-}
-
-
-/* ---------- SERVICE CARDS ---------- */
-
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.service-card {
-    background-color: #f5f8f6;
-    border-radius: 8px;
-    overflow: hidden;
-    border: 1px solid #e0e8e4;
-}
-
-.service-card img {
-    width: 100%;
-    height: 190px;
-    object-fit: cover;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card-content p {
-    font-size: 0.95rem;
-}
-
-.card-content a {
-    color: #176b4d;
-    font-weight: bold;
-}
-
-
-/* ---------- IMPACT ---------- */
-
-.impact-section {
-    background-color: #e8f1ed;
-}
-
-.impact {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-}
-
-.impact article {
-    text-align: center;
-    padding: 25px 15px;
-    background-color: white;
-    border-radius: 8px;
-}
-
-.impact h3 {
-    font-size: 2.3rem;
-    margin-bottom: 8px;
-}
-
-
-/* ---------- CALL TO ACTION ---------- */
-
-.call-to-action {
-    background-color: #176b4d;
-    color: white;
-    text-align: center;
-}
-
-.call-to-action h2 {
-    color: white;
-}
-
-.call-to-action p {
-    max-width: 750px;
-    margin: 0 auto 20px;
-}
-
-.call-to-action .button {
-    background-color: white;
-    color: #176b4d;
-}
-
-.call-to-action .button:hover {
-    background-color: #e1eee8;
-}
-
-
-/* ---------- FOOTER ---------- */
-
-footer {
-    background-color: #123f31;
-    color: white;
-    text-align: center;
-    padding: 35px 20px;
-}
-
-footer h3 {
-    color: white;
-}
-
-footer a {
-    color: white;
-}
-
-footer .copyright {
-    margin-top: 20px;
-    font-size: 0.9rem;
-}
-
-
-/* =========================================
-   MOBILE RESPONSIVE DESIGN
-   ========================================= */
-
-@media (max-width: 900px) {
-
-    .service-cards {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .impact {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .welcome {
-        grid-template-columns: 1fr;
-    }
-
-    .section-image {
-        order: 1;
-    }
-
-    .section-text {
-        order: 2;
-    }
-}
-
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 2rem;
-    }
-
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        text-align: center;
-        padding: 11px;
-    }
-
-    main > section {
-        margin: 20px 10px;
-        padding: 25px 20px;
-    }
-
-    .hero {
-        min-height: 500px;
-    }
-
-    .hero h2 {
-        font-size: 2rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-    }
-
-    .service-cards {
-        grid-template-columns: 1fr;
-    }
-
-    .impact {
-        grid-template-columns: 1fr;
-    }
-
-    .hero-buttons {
-        flex-direction: column;
-    }
-
-    .hero-buttons a {
-        width: 100%;
-    }
-}
-/* ================= HERO SECTION ================= */
-
-.hero-section {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    padding: 60px 8%;
-    background: #ffffff;
-}
-
-.hero-image {
-    flex: 1;
-}
-
-.hero-image img {
-    width: 100%;
-    max-width: 600px;
-    height: 380px;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
-}
-
-.hero-text {
-    flex: 1;
-}
-
-.hero-text h2 {
-    font-size: 38px;
-    margin-bottom: 20px;
-    color: #2f5d50;
-}
-
-.hero-text p {
-    font-size: 18px;
-    line-height: 1.7;
-    margin-bottom: 25px;
-    color: #444;
-}
-
-.hero-button {
-    display: inline-block;
-    padding: 13px 25px;
-    background: #2f5d50;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.hero-button:hover {
-    background: #23483e;
-}
-
-/* Mobile layout */
-@media (max-width: 768px) {
-
-    .hero-section {
-        flex-direction: column;
-        padding: 40px 6%;
-    }
-
-    .hero-image img {
-        height: 280px;
-    }
-
-    .hero-text h2 {
-        font-size: 30px;
-    }
-
-}
-/* ================= SERVICES SECTION ================= */
-
-.services-section {
-    padding: 70px 8%;
-    background: #f5f8f6;
-}
-
-.section-heading {
-    text-align: center;
-    margin-bottom: 40px;
-}
-
-.section-heading h2 {
-    font-size: 36px;
-    color: #2f5d50;
-    margin-bottom: 12px;
-}
-
-.section-heading p {
-    color: #555;
-    font-size: 17px;
-}
-
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-}
-
-.service-card {
-    background: white;
-    border-radius: 16px;
-    overflow: hidden;
-    text-align: center;
-    padding-bottom: 25px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease;
-}
-
-.service-card:hover {
-    transform: translateY(-6px);
-}
-
-.service-card img {
-    width: 100%;
-    height: 220px;
-    object-fit: cover;
-    display: block;
-}
-
-.service-card h3 {
-    color: #2f5d50;
-    font-size: 24px;
-    margin: 22px 15px 10px;
-}
-
-.service-card p {
-    color: #555;
-    line-height: 1.6;
-    margin: 0 20px 20px;
-}
-
-.service-card a {
-    display: inline-block;
-    background: #2f5d50;
-    color: white;
-    text-decoration: none;
-    padding: 11px 20px;
-    border-radius: 7px;
-    font-weight: bold;
-}
-
-.service-card a:hover {
-    background: #23483e;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
-
-}
-/* ================= ABOUT SECTION ================= */
-
-.home-about {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding: 70px 8%;
-    background: #ffffff;
-}
-
-.home-about-image {
-    flex: 1;
-}
-
-.home-about-image img {
-    width: 100%;
-    height: 350px;
-    object-fit: cover;
-    border-radius: 18px;
-    display: block;
-}
-
-.home-about-text {
-    flex: 1;
-}
-
-.home-about-text h2 {
-    color: #2f5d50;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.home-about-text p {
-    color: #555;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 18px;
-}
-
-.home-about-text .hero-button {
-    margin-top: 5px;
-}
-
-/* Mobile */
-@media (max-width: 768px) {
-
-    .home-about {
-        flex-direction: column;
-        padding: 50px 6%;
-    }
-
-    .home-about-image img {
-        height: 280px;
-    }
-
-    .home-about-text h2 {
-        font-size: 30px;
-    }
-
-}
-/* ================= GET INVOLVED SECTION ================= */
-
-.get-involved {
-    padding: 70px 8%;
-    background: #2f5d50;
-    text-align: center;
-}
-
-.get-involved-content {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.get-involved h2 {
-    color: white;
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.get-involved p {
-    color: white;
-    font-size: 17px;
-    line-height: 1.7;
-    margin-bottom: 30px;
-}
-
-.involved-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    flex-wrap: wrap;
-}
-
-.outline-button {
-    display: inline-block;
-    padding: 13px 25px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
-.outline-button:hover {
-    background: white;
-    color: #2f5d50;
-}
-
-/* Mobile */
-
-@media (max-width: 768px) {
-
-    .get-involved {
-        padding: 50px 6%;
-    }
-
-    .get-involved h2 {
-        font-size: 30px;
-    }
-
-    .involved-buttons {
-        flex-direction: column;
-        align-items: center;
-    }
-
-}
+        margin: 0;
+            padding: 0;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+                    line-height: 1.6;
+                        background-color: #f7f9f7;
+                            color: #333;
+                            }
+
+
+                            /* ================= HEADER ================= */
+
+                            header {
+                                background-color:#1f5c42;
+                                    color: white;
+                                        text-align: center;
+                                            padding: 2rem 5%;
+                                            }
+
+                                            .header-content h1 {
+                                                font-size: 2.5rem;
+                                                    margin-bottom: 0.5rem;
+                                                    }
+
+                                                    .header-content p {
+                                                        font-size: 1.1rem;
+                                                        }
+
+
+                                                        /* ================= NAVIGATION ================= */
+
+                                                        nav {
+                                                            background-color: #164532;
+                                                                display: flex;
+                                                                    justify-content: center;
+                                                                        flex-wrap: wrap;
+                                                                            gap: 0.5rem;
+                                                                                padding: 0.8rem 5%;
+                                                                                }
+
+                                                                                nav a {
+                                                                                    color: white;
+                                                                                        text-decoration: none;
+                                                                                            padding: 0.7rem 1rem;
+                                                                                                border-radius: 5px;
+                                                                                                    transition: 0.3s;
+                                                                                                    }
+
+                                                                                                    nav a:hover,
+                                                                                                    nav a:focus,
+                                                                                                    nav a.active {
+                                                                                                        background-color: #d9a441;
+                                                                                                            color: #222;
+                                                                                                            }
+
+
+                                                                                                            /* ================= HERO SECTION ================= */
+
+                                                                                                            .hero-section {
+                                                                                                                display: flex;
+                                                                                                                    align-items: center;
+                                                                                                                        gap: 2rem;
+                                                                                                                            padding: 4rem 8%;
+                                                                                                                                background-color: white;
+                                                                                                                                }
+
+                                                                                                                                .hero-image {
+                                                                                                                                    flex: 1;
+                                                                                                                                    }
+
+                                                                                                                                    .hero-image img {
+                                                                                                                                        width: 100%;
+                                                                                                                                            height: auto;
+                                                                                                                                                display: block;
+                                                                                                                                                    border-radius: 12px;
+                                                                                                                                                    }
+
+                                                                                                                                                    .hero-text {
+                                                                                                                                                        flex: 1;
+                                                                                                                                                        }
+
+                                                                                                                                                        .hero-text h2 {
+                                                                                                                                                            font-size: 2.4rem;
+                                                                                                                                                                color: #1f5c42;
+                                                                                                                                                                    margin-bottom: 1rem;
+                                                                                                                                                                    }
+
+                                                                                                                                                                    .hero-text p {
+                                                                                                                                                                        font-size: 1.1rem;
+                                                                                                                                                                            margin-bottom: 1.5rem;
+                                                                                                                                                                            }
+
+
+                                                                                                                                                                            /* ================= BUTTONS ================= */
+
+                                                                                                                                                                            .hero-button,
+                                                                                                                                                                            .button,
+                                                                                                                                                                            .outline-button {
+                                                                                                                                                                                display: inline-block;
+                                                                                                                                                                                    text-decoration: none;
+                                                                                                                                                                                        padding: 0.8rem 1.4rem;
+                                                                                                                                                                                            border-radius: 6px;
+                                                                                                                                                                                                font-weight: bold;
+                                                                                                                                                                                                    transition: 0.3s;
+                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                    .hero-button,
+                                                                                                                                                                                                    .button {
+                                                                                                                                                                                                        background-color: #1f5c42;
+                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                            .hero-button:hover,
+                                                                                                                                                                                                            .button:hover {
+                                                                                                                                                                                                                background-color: #d9a441;
+                                                                                                                                                                                                                    color: #222;
+                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                    .outline-button {
+                                                                                                                                                                                                                        border: 2px solid #1f5c42;
+                                                                                                                                                                                                                            color: #1f5c42;
+                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                            .outline-button:hover {
+                                                                                                                                                                                                                                background-color: #1f5c42;
+                                                                                                                                                                                                                                    color: white;
+                                                                                                                                                                                                                                    }
+
+
+                                                                                                                                                                                                                                    /* ================= WELCOME SECTION ================= */
+
+                                                                                                                                                                                                                                    .welcome {
+                                                                                                                                                                                                                                        display: flex;
+                                                                                                                                                                                                                                            align-items: center;
+                                                                                                                                                                                                                                                gap: 3rem;
+                                                                                                                                                                                                                                                    padding: 4rem 8%;
+                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                    .section-image,
+                                                                                                                                                                                                                                                    .section-text {
+                                                                                                                                                                                                                                                        flex: 1;
+                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                        .section-image img {
+                                                                                                                                                                                                                                                            width: 100%;
+                                                                                                                                                                                                                                                                height: auto;
+                                                                                                                                                                                                                                                                    border-radius: 12px;
+                                                                                                                                                                                                                                                                    }
+
+
+                                                                                                                                                                                                                                                                    /* ================= HEADINGS ================= */
+
+                                                                                                                                                                                                                                                                    .section-heading {
+                                                                                                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                                                                                                            max-width: 750px;
+                                                                                                                                                                                                                                                                                margin: 0 auto 2rem;
+                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                .section-heading h2,
+                                                                                                                                                                                                                                                                                .home-about-text h2,
+                                                                                                                                                                                                                                                                                .welcome h2 {
+                                                                                                                                                                                                                                                                                    color: #1f5c42;
+                                                                                                                                                                                                                                                                                        font-size: 2rem;
+                                                                                                                                                                                                                                                                                            margin-bottom: 1rem;
+                                                                                                                                                                                                                                                                                            }
+
+
+                                                                                                                                                                                                                                                                                            /* ================= SERVICES ================= */
+
+                                                                                                                                                                                                                                                                                            .services-section {
+                                                                                                                                                                                                                                                                                                background-color: #eef4ef;
+                                                                                                                                                                                                                                                                                                    padding: 4rem 8%;
+                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                    .services-grid {
+                                                                                                                                                                                                                                                                                                        display: grid;
+                                                                                                                                                                                                                                                                                                            grid-template-columns: repeat(4, 1fr);
+                                                                                                                                                                                                                                                                                                                gap: 1.5rem;
+                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                .service-card {
+                                                                                                                                                                                                                                                                                                                    background-color: white;
+                                                                                                                                                                                                                                                                                                                        border-radius: 10px;
+                                                                                                                                                                                                                                                                                                                            overflow: hidden;
+                                                                                                                                                                                                                                                                                                                                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                                                                                                                                                                                                                                                                                                                                    transition: transform 0.3s, box-shadow 0.3s;
+                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                    .service-card:hover {
+                                                                                                                                                                                                                                                                                                                                        transform: translateY(-5px);
+                                                                                                                                                                                                                                                                                                                                            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                            .service-card img {
+                                                                                                                                                                                                                                                                                                                                                width: 100%;
+                                                                                                                                                                                                                                                                                                                                                    height: 200px;
+                                                                                                                                                                                                                                                                                                                                                        object-fit: cover;
+                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                        .card-content {
+                                                                                                                                                                                                                                                                                                                                                            padding: 1.3rem;
+                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                            .card-content h3 {
+                                                                                                                                                                                                                                                                                                                                                                color: #1f5c42;
+                                                                                                                                                                                                                                                                                                                                                                    margin-bottom: 0.7rem;
+                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                    .card-content a {
+                                                                                                                                                                                                                                                                                                                                                                        display: inline-block;
+                                                                                                                                                                                                                                                                                                                                                                            margin-top: 1rem;
+                                                                                                                                                                                                                                                                                                                                                                                color: #1f5c42;
+                                                                                                                                                                                                                                                                                                                                                                                    font-weight: bold;
+                                                                                                                                                                                                                                                                                                                                                                                    }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                    /* ================= IMPACT ================= */
+
+                                                                                                                                                                                                                                                                                                                                                                                    .impact-section {
+                                                                                                                                                                                                                                                                                                                                                                                        padding: 4rem 8%;
+                                                                                                                                                                                                                                                                                                                                                                                            text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                                background-color: white;
+                                                                                                                                                                                                                                                                                                                                                                                                }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                /* ================= GET INVOLVED ================= */
+
+                                                                                                                                                                                                                                                                                                                                                                                                .get-involved {
+                                                                                                                                                                                                                                                                                                                                                                                                    padding: 4rem 8%;
+                                                                                                                                                                                                                                                                                                                                                                                                        text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                                            background-color: #dfece3;
+                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                            .get-involved-content {
+                                                                                                                                                                                                                                                                                                                                                                                                                max-width: 800px;
+                                                                                                                                                                                                                                                                                                                                                                                                                    margin: auto;
+                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                    .get-involved h2 {
+                                                                                                                                                                                                                                                                                                                                                                                                                        color: #1f5c42;
+                                                                                                                                                                                                                                                                                                                                                                                                                            font-size: 2rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                margin-bottom: 1rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                .involved-buttons {
+                                                                                                                                                                                                                                                                                                                                                                                                                                    display: flex;
+                                                                                                                                                                                                                                                                                                                                                                                                                                        justify-content: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                            gap: 1rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                flex-wrap: wrap;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    margin-top: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    /* ================= FOOTER ================= */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    footer {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        background-color: #164532;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                            color: white;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    padding: 2.5rem 5%;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                    footer h3 {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: 1.5rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            margin-bottom: 0.5rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                            footer a {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                color: #f0c35a;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                footer .copyright {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    margin-top: 1rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        font-size: 0.9rem;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        /* ================= TABLET ================= */
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        @media (max-width: 900px) {
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .services-grid {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    grid-template-columns: repeat(2, 1fr);
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            .hero-section,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .welcome {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        flex-direction: column;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                .hero-text,
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    .section-text {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            text-align: center;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
+
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                /* ================= MOBILE =================ǰ
+   /* ================= ENQUIRY FORM ================= */
+
+   form {
+       max-width: 700px;
+           margin: 2rem auto 0;
+               text-align: left;
+                   background-color: white;
+                       padding: 2rem;
+                           border-radius: 10px;
+                               box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+                               }
+
+                               form label {
+                                   display: block;
+                                       margin-bottom: 0.5rem;
+                                           font-weight: bold;
+                                               color: #1f5c42;
+                                               }
+
+                                               form input,
+                                               form textarea {
+                                                   width: 100%;
+                                                       padding: 0.8rem;
+                                                           margin-bottom: 1rem;
+                                                               border: 1px solid #ccc;
+                                                                   border-radius: 6px;
+                                                                       font-size: 1rem;
+                                                                           font-family: Arial, sans-serif;
+                                                                           }
+
+                                                                           form textarea {
+                                                                               resize: vertical;
+                                                                               }
+
+                                                                               form input:focus,
+                                                                               form textarea:focus {
+                                                                                   outline: 2px solid #d9a441;
+                                                                                       border-color: #1f5c42;
+                                                                                       }
+
+                                                                                       form button {
+                                                                                           border: none;
+                                                                                               cursor: pointer;
+                                                                                                   font-size: 1rem;
+                                                                                                   }
+
+
+                                                                                                   /* ================= FORM MOBILE RESPONSIVENESS ================= */
+
+                                                                                                   @media (max-width: 600px) {
+
+                                                                                                       form {
+                                                                                                               padding: 1.2rem;
+                                                                                                                   }
+
+                                                                                                                       form input,
+                                                                                                                           form textarea {
+                                                                                                                                   font-size: 1rem;
+                                                                                                                                       }
+
+                                                                                                                                       }                                                                                                                                                                                                                                                                                                                                 
